@@ -1,33 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import OldClockMenu from "./components/OldClockMenu.tsx";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <h1 className={"w-full text-center pt-[4rem] text-xl"}>This page is used to store components I build and test.</h1>
+        <div className={"w-full p-[4rem] flex justify-evenly items-center"}>
+            <OldClockMenu navItems={[
+                "cauler",
+                "conner",
+                "zac",
+                "rupert",
+                "pearly",
+                "robert"
+            ]}/>
+        <p
+            className={"text-black text-center font-bold"}
+        >This component was made as a navigation menu for&nbsp;
+                <a
+                    href={"https://omenclate.com/"}
+                    className={"text-emerald-500"}
+                >my photography website.
+                </a><br/>It remains unused. The main issue I found with it was the lack of clarity of what each letter meant.<br/>It would be annoying to click through all to discover what each menu item was.
+            </p>
+        </div>
     </>
   )
 }
