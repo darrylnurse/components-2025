@@ -22,7 +22,7 @@ function App() {
                     className={"text-emerald-500"}
                     target={"_blank"}
                 >my photography website.
-                </a><br/>It remains unused. The main issue I found with it was the lack of clarity of what each letter meant.<br/>It would be annoying to click through all to discover what each menu item was.
+                </a><br/>It remains unused. The main issue I found with it was the lack of clarity of what each letter meant.<br/>Would be annoying to click through all to discover what each menu item was.<br/>There is a rotational bug which likely stems from counter-clockwise angle calculations.
             </p>
         </div>
     </>
