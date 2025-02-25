@@ -3,7 +3,11 @@ import {useEffect, useState} from "react";
 const FULL_CIRCLE = 360;
 const INITIAL_OFFSET_DEGREES = 270;
 
-export default function OldClockMenu ({ navItems } : string[]) {
+type NavItemList = {
+    navItems: string[],
+}
+
+export default function OldClockMenu ({ navItems }: NavItemList) {
 
     const itemDegree = Math.floor(FULL_CIRCLE / navItems.length);
 
