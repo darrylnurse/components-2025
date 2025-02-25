@@ -20,6 +20,7 @@ function App() {
                 <a
                     href={"https://omenclate.com/"}
                     className={"text-emerald-500"}
+                    target={"_blank"}
                 >my photography website.
                 </a><br/>It remains unused. The main issue I found with it was the lack of clarity of what each letter meant.<br/>It would be annoying to click through all to discover what each menu item was.
             </p>
